@@ -1,0 +1,18 @@
+version: '3'
+services:
+  webserver:
+    build:
+      context: /root
+      labels:
+        - com.host.description="Demo Web Server"
+        - com.host.application="nginx"
+    container_name: webserver01
+    restart: unless-stopped
+    ports:
+      - 80:80
+    volumes:
+      - /root/volshare:/root/volshare
+    networks:
+      - sharednet
+networks:
+  sharednet:
