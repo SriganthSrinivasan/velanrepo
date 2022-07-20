@@ -1,4 +1,3 @@
-#Sample01
 FROM nginx
 LABEL Maintainer "Sriganth Srinivasan"
 WORKDIR /usr/share/nginx/html
