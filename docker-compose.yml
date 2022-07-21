@@ -1,20 +1,68 @@
-#Sample01
 version: '3'
 services:
-  webserver:
-    build:
-      context: /root
-      labels:
-        - com.host.description="Demo Web Server"
-        - com.host.application="nginx"
+  webserver01:
+    image: nginx:latest
     container_name: webserver01
-    restart: unless-stopped
     ports:
       - 80:80
     volumes:
       - /root/volshare:/root/volshare
     networks:
       - sharednet
+  webserver02:
+    image: nginx:latest
+    container_name: webserver02
+    ports:
+      - 81:80
+    volumes:
+      - /root/volshare:/root/volshare
+    networks:
+      - sharednet
+  webserver03:
+    image: nginx:latest
+    container_name: webserver03
+    ports:
+      - 82:80
+    volumes:
+      - /root/volshare:/root/volshare
+    networks:
+      - sharednet
+  webserver04:
+    image: nginx:latest
+    container_name: webserver04
+    ports:
+      - 83:80
+    volumes:
+      - /root/volshare:/root/volshare
+    networks:
+      - sharednet
+  webserver05:
+    image: nginx:latest
+    container_name: webserver05
+    ports:
+      - 84:80
+    volumes:
+      - /root/volshare:/root/volshare
+    networks:
+      - sharednet
+  webserver06:
+    image: nginx:latest
+    container_name: webserver06
+    ports:
+      - 85:80
+    volumes:
+      - /root/volshare:/root/volshare
+    networks:
+      - sharednet
+  webserver07:
+    image: nginx:latest
+    container_name: webserver07
+    ports:
+      - 86:80
+    volumes:
+      - /root/volshare:/root/volshare
+    networks:
+      - sharednet
 networks:
   sharednet:
-#Sample01
+
