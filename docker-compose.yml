@@ -1,6 +1,10 @@
 version: '4'
 #Sample01
+<<<<<<< HEAD
 >>>>>>> f45ee2d (MC 01 | Dev MGR)
+=======
+version: '2'
+>>>>>>> c972334 (MC 02 | Dev MGR)
 services:
   webserver:
     build:
